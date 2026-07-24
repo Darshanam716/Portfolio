@@ -1,0 +1,372 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Darshan A M — AI/ML &amp; Full-Stack Java Developer</title>
+<meta name="description" content="Portfolio of Darshan A M — Computer Vision, Explainable AI, and Full-Stack projects." />
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
+<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<!-- Animated grid / circuit backdrop -->
+<div class="bg-grid" aria-hidden="true"></div>
+<div class="bg-glow" aria-hidden="true"></div>
+
+<!-- Header -->
+<header class="header" id="header">
+  <div class="container nav-container">
+    <a href="#home" class="logo">
+      <span class="logo-mark">D&lt;&gt;M</span>
+    </a>
+    <nav class="nav" id="nav">
+      <a href="#home" data-nav>Home</a>
+      <a href="#about" data-nav>About</a>
+      <a href="#skills" data-nav>Skills</a>
+      <a href="#education" data-nav>Education</a>
+      <a href="#experience" data-nav>Experience</a>
+      <a href="#projects" data-nav>Projects</a>
+      <a href="#achievements" data-nav>Achievements</a>
+      <a href="#contact" data-nav>Contact</a>
+    </nav>
+    <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<!-- HERO -->
+<section id="home" class="hero">
+  <div class="container hero-container">
+    <div class="hero-text">
+      <p class="hero-eyebrow"><span class="pulse-dot"></span> Available for Java Developer roles</p>
+      <h1 class="reveal-up d1">Darshan A M</h1>
+      <h2 class="hero-role reveal-up d2">
+        <span id="typing-text"></span><span class="cursor">|</span>
+      </h2>
+      <p class="hero-desc reveal-up d3">
+        Java is my main language - Core Java plus the Spring / full-stack ecosystem I'm building on
+        right now. I also bring computer-vision and explainable-AI experience from projects like
+        Grad-CAM heatmaps on MRI scans and YOLOv8 detection, and I build clean full-stack web apps
+        end to end.
+      </p>
+      <div class="hero-actions reveal-up d4">
+        <a href="assets/Resume.pdf" class="btn primary" target="_blank">
+          <span>Download Résumé</span>
+        </a>
+        <a href="#chat-launcher" class="btn outline" id="hero-chat-btn">Ask my AI about me</a>
+      </div>
+      <div class="hero-socials reveal-up d4">
+        <a href="https://github.com/Darshanam716" target="_blank" title="GitHub"><i class="devicon-github-original"></i></a>
+        <a href="https://www.linkedin.com/in/darshan-a-m" target="_blank" title="LinkedIn"><i class="devicon-linkedin-plain"></i></a>
+        <a href="https://leetcode.com/Darshan_AM_123" target="_blank" title="LeetCode" class="social-img-link"><img src="https://cdn.simpleicons.org/leetcode/f5a623" alt="LeetCode" class="social-icon-img" /></a>
+        <a href="https://www.geeksforgeeks.org/user/darshanam557/" target="_blank" title="GeeksforGeeks">GfG</a>
+        <a href="mailto:amdarshan557@gmail.com" title="Email">✉</a>
+      </div>
+    </div>
+
+    <div class="hero-avatar-wrap reveal-up d3">
+      <div class="avatar-stage" id="avatar-stage">
+        <div class="avatar-glow"></div>
+        <svg class="avatar-orbit-svg" viewBox="0 0 320 380" width="320" height="380" aria-hidden="true">
+          <circle class="orbit-ring" cx="160" cy="170" r="128" fill="none" stroke="#f5a623" stroke-opacity="0.25" stroke-width="1" stroke-dasharray="2 6"/>
+          <g class="orbit-group">
+            <g class="chip chip1"><rect x="-22" y="-12" width="44" height="24" rx="6" fill="#111827" stroke="#f5a623" stroke-width="1"/><text x="0" y="5" text-anchor="middle" class="chip-text">JAVA</text></g>
+            <g class="chip chip2"><rect x="-28" y="-12" width="56" height="24" rx="6" fill="#111827" stroke="#38bdf8" stroke-width="1"/><text x="0" y="5" text-anchor="middle" class="chip-text">SPRING</text></g>
+            <g class="chip chip3"><rect x="-22" y="-12" width="44" height="24" rx="6" fill="#111827" stroke="#4ade80" stroke-width="1"/><text x="0" y="5" text-anchor="middle" class="chip-text">CNN</text></g>
+          </g>
+        </svg>
+        <div class="avatar-photo-wrap" id="avatar-photo-wrap">
+          <img src="assets/profile.jpg" alt="Darshan A M" class="avatar-photo" />
+        </div>
+        <div class="avatar-caption">
+          <span class="status-dot"></span> <span id="avatar-status">idle - say hi in chat</span>
+        </div>
+      </div>
+    </div>
+  </div>
+  <a href="#about" class="scroll-cue" aria-label="Scroll down"><span></span></a>
+</section>
+
+<!-- ABOUT -->
+<section id="about" class="section">
+  <div class="container">
+    <p class="section-eyebrow reveal">about</p>
+    <h2 class="section-title reveal">Built at the intersection of vision &amp; explanation</h2>
+    <div class="about-grid">
+      <p class="about-text reveal">
+        I'm an aspiring engineering graduate from <strong>Brindavan College of Engineering (VTU)</strong>,
+        Bengaluru, currently holding a <strong>8.34 CGPA</strong>. My work centers on computer vision and
+        explainable AI — I like models that don't just predict, but show their reasoning, whether that's
+        Grad-CAM heatmaps on an MRI scan or a YOLOv8 detection box in an exam hall. Outside of ML, I build
+        full-stack apps end to end, from geospatial React dashboards to secure authentication systems.
+      </p>
+      <div class="about-stats reveal">
+        <div class="stat"><span class="stat-num" data-count="8.34">0</span><span class="stat-label">CGPA</span></div>
+        <div class="stat"><span class="stat-num" data-count="3">0</span><span class="stat-label">Major Projects</span></div>
+        <div class="stat"><span class="stat-num" data-count="5">0</span><span class="stat-label">Hackathons</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SKILLS -->
+<section id="skills" class="section alt">
+  <div class="container">
+    <p class="section-eyebrow reveal">stack</p>
+    <h2 class="section-title reveal">Skills &amp; Tools</h2>
+
+    <div class="skills-grid">
+      <div class="skill-card reveal">
+        <h3>Languages</h3>
+        <div class="bar"><div class="bar-label">Java (primary language)</div><div class="bar-track"><div class="bar-fill" data-pct="88"></div></div></div>
+        <div class="bar"><div class="bar-label">Python</div><div class="bar-track"><div class="bar-fill" data-pct="85"></div></div></div>
+        <div class="bar"><div class="bar-label">SQL</div><div class="bar-track"><div class="bar-fill" data-pct="78"></div></div></div>
+        <div class="bar"><div class="bar-label">JavaScript</div><div class="bar-track"><div class="bar-fill" data-pct="72"></div></div></div>
+        <div class="bar"><div class="bar-label">C++ (DSA practice only)</div><div class="bar-track"><div class="bar-fill" data-pct="65"></div></div></div>
+      </div>
+
+      <div class="skill-card reveal">
+        <h3>Java &amp; Core Java</h3>
+        <div class="chip-row">
+          <span class="tech-chip"><i class="devicon-java-plain"></i>Core Java</span>
+          <span class="tech-chip">OOP</span>
+          <span class="tech-chip">Data Structures</span>
+          <span class="tech-chip">Algorithms</span>
+          <span class="tech-chip"><i class="devicon-git-plain"></i>Git</span>
+        </div>
+      </div>
+
+      <div class="skill-card reveal">
+        <h3>ML &amp; Deep Learning</h3>
+        <div class="bar"><div class="bar-label">Computer Vision</div><div class="bar-track"><div class="bar-fill" data-pct="90"></div></div></div>
+        <div class="bar"><div class="bar-label">CNN / ResNet / ViT</div><div class="bar-track"><div class="bar-fill" data-pct="85"></div></div></div>
+        <div class="bar"><div class="bar-label">Explainable AI (Grad-CAM)</div><div class="bar-track"><div class="bar-fill" data-pct="83"></div></div></div>
+        <div class="bar"><div class="bar-label">NLP</div><div class="bar-track"><div class="bar-fill" data-pct="70"></div></div></div>
+      </div>
+
+      <div class="skill-card reveal">
+        <h3>Databases &amp; Tools</h3>
+        <div class="chip-row">
+          <span class="tech-chip"><i class="devicon-mongodb-plain"></i>MongoDB</span>
+          <span class="tech-chip"><i class="devicon-mysql-plain"></i>MySQL</span>
+          <span class="tech-chip"><i class="devicon-postgresql-plain"></i>PostgreSQL</span>
+          <span class="tech-chip"><i class="devicon-python-plain"></i>NumPy / Pandas</span>
+          <span class="tech-chip"><i class="devicon-opencv-plain"></i>OpenCV</span>
+          <span class="tech-chip"><i class="devicon-pytorch-original"></i>PyTorch</span>
+          <span class="tech-chip">Jupyter / Colab</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- EDUCATION -->
+<section id="education" class="section">
+  <div class="container">
+    <p class="section-eyebrow reveal">journey</p>
+    <h2 class="section-title reveal">Education</h2>
+
+    <div class="timeline">
+      <div class="timeline-item reveal">
+        <div class="timeline-dot"></div>
+        <div class="timeline-content">
+          <span class="timeline-date">2022 — Present</span>
+          <h3>B.Tech in Computer Science</h3>
+          <p>Brindavan College of Engineering, Bengaluru (VTU) — CGPA 8.34</p>
+        </div>
+      </div>
+      <div class="timeline-item reveal">
+        <div class="timeline-dot"></div>
+        <div class="timeline-content">
+          <span class="timeline-date">11th &amp; 12th Grade</span>
+          <h3>Brilliant P U College, Karnataka</h3>
+          <p>86.4%</p>
+        </div>
+      </div>
+      <div class="timeline-item reveal">
+        <div class="timeline-dot"></div>
+        <div class="timeline-content">
+          <span class="timeline-date">10th Grade</span>
+          <h3>Chirantana High School, Karnataka</h3>
+          <p>83.36%</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- EXPERIENCE -->
+<section id="experience" class="section alt">
+  <div class="container">
+    <p class="section-eyebrow reveal">hands-on</p>
+    <h2 class="section-title reveal">Experience</h2>
+
+    <div class="experience-card reveal">
+      <div class="experience-card-head">
+        <h3>Machine Learning Trainee</h3>
+        <span class="timeline-date">Sep 2025 — Feb 2026</span>
+      </div>
+      <p class="experience-org">SAP &times; Edunet Foundation, Karnataka</p>
+      <p class="experience-desc">
+        Trained on algorithms including Linear Regression, Logistic Regression, SVM, Decision
+        Trees, Random Forest, and KNN. Learned deep learning concepts including ANN, CNN
+        architectures, LSTM networks, VGG models, and model training workflows. Worked on NLP
+        tasks, data preprocessing, visualization, and ML pipeline development using Python.
+      </p>
+    </div>
+  </div>
+</section>
+
+<!-- PROJECTS -->
+<section id="projects" class="section">
+  <div class="container">
+    <p class="section-eyebrow reveal">work</p>
+    <h2 class="section-title reveal">Projects</h2>
+
+    <div class="projects-grid">
+      <article class="project-card reveal">
+        <div class="project-tag">Computer Vision · Jan – Mar 2026</div>
+        <h3>CheatShield AI</h3>
+        <p>Smart exam surveillance system using face recognition, YOLOv8 phone detection, and behavior
+          analysis to flag malpractice in real time, with automated alerts and attendance reports.</p>
+        <div class="project-tech">
+          <span>YOLOv8</span><span>OpenCV</span><span>Face Recognition</span><span>Python</span>
+        </div>
+        <a href="https://github.com/Darshanam716/AI-Powered-CheatSheildAI" target="_blank" class="project-link">View on GitHub →</a>
+      </article>
+
+      <article class="project-card reveal">
+        <div class="project-tag">Explainable AI · Mar – Apr 2026</div>
+        <h3>ScholAR</h3>
+        <p>Multimodal AI platform for Alzheimer's detection from brain MRI + clinical data, using 3D U-Net
+          segmentation, ResNet, Vision Transformers, and Grad-CAM — plus a research agent that validates
+          predictions against PubMed, Semantic Scholar and arXiv.</p>
+        <div class="project-tech">
+          <span>3D U-Net</span><span>ResNet</span><span>ViT</span><span>Grad-CAM</span>
+        </div>
+        <a href="https://github.com/Darshanam716/ScholAR" target="_blank" class="project-link">View on GitHub →</a>
+      </article>
+      <!-- ScholAR repo not listed on the original portfolio; no link added to avoid a dead URL -->
+
+      <article class="project-card reveal">
+        <div class="project-tag">Full-Stack · Jul – Nov 2025</div>
+        <h3>Crisis Connector</h3>
+        <p>MERN-stack emergency response platform with real-time mapping and geospatial services,
+          connecting hospitals, police, and fire brigades behind secure authentication.</p>
+        <div class="project-tech">
+          <span>MongoDB</span><span>Express</span><span>React</span><span>Node.js</span>
+        </div>
+        <a href="https://github.com/Darshanam716/cresis-connector/tree/main/CrisisConnect" target="_blank" class="project-link">View on GitHub →</a>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- CERTIFICATES -->
+<!-- ACHIEVEMENTS + CERTIFICATES -->
+<section id="achievements" class="section alt">
+  <div class="container">
+    <p class="section-eyebrow reveal">recognition &amp; proof of work</p>
+    <h2 class="section-title reveal">Competitions &amp; Awards</h2>
+    <div class="achieve-grid">
+      <a href="assets/certificates/cert1.jpg" target="_blank" class="achieve-card has-cert reveal">
+        <img src="assets/certificates/cert1.jpg" alt="IDEATHON-2K24 certificate" class="achieve-cert-thumb" loading="lazy" />
+        <div class="achieve-card-body">
+          <h3>IDEATHON-2K24</h3>
+          <p>Team Lead — Runner Up</p>
+          <span class="achieve-date">Dec 2024</span>
+          <span class="achieve-cert-tag">View certificate ↗</span>
+        </div>
+      </a>
+      <a href="assets/certificates/cert2.jpg" target="_blank" class="achieve-card has-cert reveal">
+        <img src="assets/certificates/cert2.jpg" alt="BRIN-HACK 2025 certificate" class="achieve-cert-thumb" loading="lazy" />
+        <div class="achieve-card-body">
+          <h3>BRIN-HACK 2025</h3>
+          <p>National Level Hackathon</p>
+          <span class="achieve-date">May 2025</span>
+          <span class="achieve-cert-tag">View certificate ↗</span>
+        </div>
+      </a>
+      <a href="assets/certificates/cert3.png" target="_blank" class="achieve-card has-cert reveal">
+        <img src="assets/certificates/cert3.png" alt="0-1 Hackathon E-Summit'25 certificate" class="achieve-cert-thumb" loading="lazy" />
+        <div class="achieve-card-body">
+          <h3>0-1 Hackathon, E-Summit'25</h3>
+          <p>IIIT Delhi</p>
+          <span class="achieve-date">Aug 2025</span>
+          <span class="achieve-cert-tag">View certificate ↗</span>
+        </div>
+      </a>
+      <a href="assets/certificates/cert4.png" target="_blank" class="achieve-card has-cert reveal">
+        <img src="assets/certificates/cert4.png" alt="0-1 Hackathon E-Summit'25 certificate" class="achieve-cert-thumb" loading="lazy" />
+        <div class="achieve-card-body">
+          <h3>LUMINUS-RNSIT</h3>
+          <p>National Level Hackathon</p>
+          <span class="achieve-date">Apr 2026</span>
+          <span class="achieve-cert-tag">View certificate ↗</span>
+        </div>
+      </a>
+   
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact" class="section">
+  <div class="container contact-container">
+    <p class="section-eyebrow reveal">get in touch</p>
+    <h2 class="section-title reveal">Let's build something intelligent</h2>
+    <p class="reveal contact-sub">Open to entry-level AI/ML and Full-Stack Developer roles.</p>
+    <div class="contact-links reveal">
+      <a href="mailto:amdarshan557@gmail.com" class="contact-pill">✉ amdarshan557@gmail.com</a>
+      <a href="tel:+919019837394" class="contact-pill">☎ 9019837394</a>
+      <a href="https://www.linkedin.com/in/darshan-a-m" target="_blank" class="contact-pill">LinkedIn</a>
+      <a href="https://github.com/Darshanam716" target="_blank" class="contact-pill">GitHub</a>
+    </div>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="container">
+    <p>© <span id="year"></span> Darshan A M. All rights reserved.</p>
+  </div>
+</footer>
+
+<!-- CHAT WIDGET -->
+<button id="chat-launcher" class="chat-launcher" aria-label="Open chat">
+  <span class="chat-launcher-icon">💬</span>
+  <span class="chat-launcher-pulse"></span>
+</button>
+
+<div id="chat-panel" class="chat-panel" aria-hidden="true">
+  <div class="chat-header">
+    <div class="chat-header-avatar">
+      <svg viewBox="0 0 40 40" width="34" height="34"><circle cx="20" cy="20" r="20" fill="#1c2438"/><circle cx="20" cy="17" r="8" fill="#e6b58c"/><path d="M6 40 Q6 28 20 27 Q34 28 34 40 Z" fill="#1c2438"/></svg>
+    </div>
+    <div class="chat-header-text">
+      <strong>Ask about Darshan</strong>
+      <span id="chat-subtitle">Powered by Darshan's AI Assistance</span>
+    </div>
+    <button id="chat-close" aria-label="Close chat">✕</button>
+  </div>
+  <div class="chat-messages" id="chat-messages"></div>
+  <div class="chat-suggestions" id="chat-suggestions">
+    <button data-q="What is Darshan currently learning?">Currently learning?</button>
+    <button data-q="What projects has Darshan built?">Projects?</button>
+    <button data-q="Tell me about his experience">Experience?</button>
+    <button data-q="Where can I see his certificates?">Certificates?</button>
+    <button data-q="How can I contact him?">Contact?</button>
+  </div>
+  <form class="chat-input-row" id="chat-form">
+    <input type="text" id="chat-input" placeholder="Ask something about Darshan…" autocomplete="off" />
+    <button type="submit" aria-label="Send">➤</button>
+  </form>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
