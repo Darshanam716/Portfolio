@@ -193,7 +193,7 @@ launcher.addEventListener("click", () => {
   if (!greeted) {
     greeted = true;
     setTimeout(() => {
-      addMessage("Hey! I'm Darshan's AI assistant, running on a Java 17 backend. Ask me anything about his skills, projects, or background.", "bot");
+      addMessage("Hey! I'm Darshan's AI assistant. Ask me anything about his skills, projects, or background.", "bot");
     }, 300);
   }
 });
