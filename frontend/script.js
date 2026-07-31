@@ -226,7 +226,7 @@ async function sendMessage(message) {
     const data = await res.json();
     typingBubble.remove();
     addMessage(data.reply, "bot");
-    chatSubtitle.textContent = "Powered by a Darshan AI Assistance";
+    chatSubtitle.textContent = "Powered by a Darshan's AI Assistance";
     stopTalking("just replied ✓");
   } catch (err) {
     typingBubble.remove();
