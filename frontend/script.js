@@ -221,7 +221,7 @@ async function sendMessage(message) {
     const data = await res.json();
     typingBubble.remove();
     addMessage(data.reply, "bot");
-    chatSubtitle.textContent = "Powered by a Java 17 backend";
+    chatSubtitle.textContent = "Powered by a Darshan's AI Assistance";
     stopTalking("just replied ✓");
   } catch (err) {
     typingBubble.remove();
