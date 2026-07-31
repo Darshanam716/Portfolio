@@ -1,6 +1,11 @@
 // ===== Config =====
-const API_BASE = window.location.origin.includes("null") ? "" : ""; // same-origin by default
-const CHAT_ENDPOINT = "/api/chat";
+// If the frontend is deployed separately from the backend (e.g. frontend on
+// Vercel, backend on Render), set window.CHAT_API_BASE to the backend's full
+// URL before this script loads, e.g.:
+//   <script>window.CHAT_API_BASE = "https://your-backend.onrender.com";</script>
+// If frontend and backend are served together (recommended - see Dockerfile),
+// leave it unset and requests will use the same origin automatically.
+const CHAT_ENDPOINT = (window.CHAT_API_BASE || "") + "/api/chat";
 
 document.getElementById("year").textContent = new Date().getFullYear();
 
@@ -221,7 +226,7 @@ async function sendMessage(message) {
     const data = await res.json();
     typingBubble.remove();
     addMessage(data.reply, "bot");
-    chatSubtitle.textContent = "Powered by a Darshan's AI Assistance";
+    chatSubtitle.textContent = "Powered by a Java 17 backend";
     stopTalking("just replied ✓");
   } catch (err) {
     typingBubble.remove();
